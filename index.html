@@ -8,15 +8,6 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <script>
-    var password = "ILoveJeff";
-
-    var userInput = prompt("Enter password:");
-
-    if (userInput !== password) {
-      document.write("Access denied");
-    }
-  </script>
 </head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -24,7 +15,7 @@
     <meta name="description" content="Welcome to our website.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="Virginia and Jeff are hitched!">
+    <meta property="og:title" content="Virginia's website under construction.">
     <meta property="og:description" content="Welcome to our website!">
     <meta property="og:image" content="apple-touch-icon.png">
     <meta property="og:type" content="website">
@@ -48,6 +39,9 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
+
+<button id="password-btn">Enter Site</button>
+
 <section class="hero">
     <section class="navigation" >
         <header>
@@ -61,8 +55,6 @@
                             <li><a href="#FAQ">FAQ</a></li>
                             <li><a href="#intro">Stories</a></li>
                             <li><a href="#eng-pics">Pics</a></li>
-                            
-
                         </ul>
                     </nav>
                 </div>
@@ -72,6 +64,7 @@
             </div>
         </header>
     </section>
+</section>
 
 
 <section class="events section" id="things-to-do">
@@ -80,8 +73,8 @@
             <div class="col-md-12">
                 <img style="width: 70%;" class="rounded center-block center" src="img/Rochester_MN_Skyline_Winter.gif"/>
                 <h2 class="header text-center"><strong>Things to Do</strong></h2>
-            </div>
-        </div>
+           </div>
+        </div> 
         <div class="row">
             <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                 <div class="wp3">
@@ -126,7 +119,7 @@
                     <h5><a href = "https://www.victoriasmn.com/" target="_blank">Victoria's Ristorante</a> | <a href="https://www.sorellinasmn.com/" target="_blank"> (or Sorrellina's) <span class="time"> </span></a></h5>
                     Another Nowakowski family favorite for when we want Italian, but we don't want to cook. 
                     <h5><a href ="https://www.jacksbottleshopmn.com/" target="_blank">Jack's Bottle Shop <span class="time"> </span></a></h5>
-                    Jeff's favorite spot for beer: features a wide selsection of beers curated by a personable staff. 
+                    Jeff's favorite spot for beer: features a wide selection of beers curated by a personable staff. 
                    <p></p>
                 </div>
                 <div class="wp6">
@@ -135,24 +128,20 @@
             </div>
         </div>
     
-    </section>
 
 <section id="FAQ" class="section">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <h3>Frequently Asked Questions</h3>
-                <div class=" col-md-12 text-left">
 </div>
 <br>
 <br>                  
 <br>
-                </p>
         </div>
         </div>
     </div>
 </section>
-
 
 <section class="events section-padding" id="events">
     <div class="container">
@@ -281,10 +270,6 @@
 
 </section>
 
-
-
-
-
         <!--<div class="row">
             <div class="col-md-2">
                 <a class="fancybox" rel="group" href="img/eng_pics/_RFX2942-sm.jpg">
@@ -378,6 +363,18 @@
   gtag('js', new Date());
 
   gtag('config', 'G-5DF3HZEYMG');
+</script>
+<script>
+  document.getElementById('password-btn').addEventListener('click', function() {
+    var password = prompt("Enter password:");
+    if (password !== "ILoveJeff") {
+      alert("Access denied");
+    } else {
+      // Password correct - could hide button or show content
+      this.style.display = 'none';
+      alert("Welcome!");
+    }
+  });
 </script>
 </body>
 </html>
